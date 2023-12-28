@@ -1,0 +1,30 @@
+{
+    "name": "testplugin",
+    "version": "1.0.0",
+    "description": "Cordova demo plugin",
+    "author": "<Your name>",
+    "license": "MIT-0",
+    "homepage": "<Your git repository>",
+    "repository": {
+      "type": "git",
+      "url": "<Your git repository>"
+    },
+    "cordova": {
+      "id": "cordova-plugin-example",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "keywords": [
+      "ecosystem:cordova",
+      "cordova-android",
+      "cordova-ios",
+      "cordova-electron",
+      "cordova",
+      "android",
+      "ios",
+      "electron",
+      "example"
+    ]
+  }
