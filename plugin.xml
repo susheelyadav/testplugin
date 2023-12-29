@@ -24,6 +24,7 @@
 
     <!-- Source file for Android -->
     <source-file src="src/android/testplugin.java" target-dir="src/testplugin/testplugin" />
+     <framework custom="true" src="src/android/mobile-ffmpeg-x2.gradle" type="gradleReference" />     
   </platform>
 
   <!-- iOS platform configuration -->
