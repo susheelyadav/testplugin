@@ -40,8 +40,23 @@
     <header-file src="src/ios/Testplugin.h" />
     <source-file src="src/ios/Testplugin.m" />
     <hook type="after_platform_add" src="hooks/after_platform_add_install_pods.js" />
+
+  <podspec>
+
+   <config>
+
+        <source url="https://github.com/arthenica/ffmpeg-kit.git"/>
+
+   </config>
+
+   <pods use-frameworks="true">
+
+        <pod name="ffmpeg-kit-ios-full" options=":podspec => 'https://github.com/arthenica/ffmpeg-kit.git'" />
+
+   </pods>
+
+</podspec>
    
-     <framework src="ffmpeg-kit-ios-full" type="podspec" spec="~> 2.0.0"/>
   </platform>
 
 </plugin>
