@@ -9,21 +9,7 @@
     
     NSString *commandString = [self buildFFmpegCommandWithAudioFiles:fileURIs outputFile:outputFile];
     
-    [FFmpegKit executeAsync:commandString withCompleteCallback:^(FFmpegSession *session) {
-        SessionState state = [session getState];
-        ReturnCode *returnCode = [session getReturnCode];
-
-        if ([ReturnCode isSuccess:returnCode]) {
-            NSLog(@"Encode completed successfully.\n");
-            CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:outputFile];
-            [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-        } else {
-            NSString *errorLog = [NSString stringWithFormat:@"Encode failed with state %@ and rc %@.%@", [FFmpegKitConfig sessionStateToString:state], returnCode, [session getFailStackTrace] ?: @"\n"];
-            NSLog(@"%@", errorLog);
-            CDVPluginResult *errorResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:errorLog];
-            [self.commandDelegate sendPluginResult:errorResult callbackId:command.callbackId];
-        }
-    }];
+   
 }
 
 - (NSString *)buildFFmpegCommandWithAudioFiles:(NSArray<NSString *> *)audioFiles outputFile:(NSString *)outputFile {
