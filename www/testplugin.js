@@ -1,5 +1,14 @@
-var exec = require('cordova/exec');
 
-exports.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'testplugin', 'coolMethod', [arg0]);
+var exec = require("cordova/exec");
+
+var AudioMerger = {
+	mergeAudioFiles: function (audioFiles, success, error, parallelMixing) {
+		exec(success, error, "testplugin", "mergeAudioFiles", [
+			audioFiles,
+			parallelMixing,
+		]);
+	},
 };
+
+module.exports = AudioMerger;
+
