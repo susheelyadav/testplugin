@@ -2,7 +2,7 @@
 
 #import <Cordova/CDV.h>
 
-@interface testplugin : CDVPlugin {
+@interface Testplugin : CDVPlugin {
   // Member variables go here.
 }
 
