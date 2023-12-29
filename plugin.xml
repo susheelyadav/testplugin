@@ -37,7 +37,6 @@
     </config-file>
 
     <!-- Source file for iOS -->
-    <header-file src="src/ios/AudioMerger.h" />
     <hook type="after_platform_add" src="hooks/after_platform_add_install_pods.js" />
      <pod name="ffmpeg-kit-ios-full" spec="~> 6.0" />
     <source-file src="src/ios/testplugin.m" />
