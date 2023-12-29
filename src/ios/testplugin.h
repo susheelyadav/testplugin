@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
-
+  
 <<<<<<< HEAD
 @interface Testplugin : CDVPlugin {}
 =======
