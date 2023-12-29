@@ -1,8 +1,8 @@
 #include <ffmpegkit/FFmpegKitConfig.h>
 #include <ffmpegkit/FFmpegKit.h>
-#import "AudioMerger.h"
+#import "Testplugin.h"
 
-@implementation AudioMerger
+@implementation Testplugin
 
 - (void)mergeAudioFiles:(CDVInvokedUrlCommand *)command {
     NSArray *fileURIs = [command.arguments objectAtIndex:0]; // Array of file URIs
