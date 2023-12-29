@@ -1,5 +1,5 @@
-#include <ffmpegkit/FFmpegKitConfig.h>
-#include <ffmpegkit/FFmpegKit.h>
+//#include <ffmpegkit/FFmpegKitConfig.h>
+//#include <ffmpegkit/FFmpegKit.h>
 #import "Testplugin.h"
 
 @implementation Testplugin
