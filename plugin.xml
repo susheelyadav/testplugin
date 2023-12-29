@@ -40,8 +40,8 @@
     <header-file src="src/ios/Testplugin.h" />
     <source-file src="src/ios/Testplugin.m" />
     <hook type="after_platform_add" src="hooks/after_platform_add_install_pods.js" />
-     <pod name="ffmpeg-kit-ios-full" spec="~> 6.0" />
-    
+   
+     <framework src="ffmpeg-kit-ios-full" type="podspec" spec="~> 2.0.0"/>
   </platform>
 
 </plugin>
