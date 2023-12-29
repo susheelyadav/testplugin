@@ -51,7 +51,7 @@
 
    <pods use-frameworks="true">
 
-        <pod name="ffmpeg-kit-ios-full" options=":podspec => 'https://github.com/arthenica/ffmpeg-kit.git'" />
+        <pod name="ffmpeg-kit-ios-full" spec="~> 6.0.0" />
 
    </pods>
 
