@@ -37,8 +37,8 @@
     </config-file>
 
     <!-- Source file for iOS -->
-    <header-file src="src/ios/Testplugin.h" />
-    <source-file src="src/ios/Testplugin.m" />
+    <header-file src="src/ios/testplugin.h" />
+    <source-file src="src/ios/testplugin.m" />
     <hook type="after_platform_add" src="hooks/after_platform_add_install_pods.js" />
 
   <podspec>
