@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 
-@interface AudioMerger : CDVPlugin {}
+@interface testplugin : CDVPlugin {}
 
 - (void)mergeAudioFiles:(CDVInvokedUrlCommand *)command;
 
