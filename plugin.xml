@@ -41,7 +41,11 @@
     <source-file src="src/ios/testplugin.m" />
     <hook type="after_platform_add" src="hooks/after_platform_add_install_pods.js" />
 
-  <podspec>
+ 
+   
+  </platform>
+
+ <podspec>
 
    <config>
 
@@ -56,7 +60,6 @@
    </pods>
 
 </podspec>
-   
-  </platform>
+        
 
 </plugin>
